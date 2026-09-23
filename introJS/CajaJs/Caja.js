@@ -212,3 +212,4 @@ function contarProductosVendidos() {
     console.log(`Productos vendidos en total: ${totalProductos}`);
     return totalProductos;
 }
+//Cambios realizados con exito.
