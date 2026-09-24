@@ -213,3 +213,4 @@ function contarProductosVendidos() {
     return totalProductos;
 }
 //Cambios realizados con exito.
+// se evaluaron los cambios para que tuvieran conexion con la pasrte de  cocina
