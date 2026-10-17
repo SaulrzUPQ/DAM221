@@ -10,7 +10,8 @@ import {Perfil} from './componentes/Perfil.js';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hola mundo react native!</Text>
+      
+    {/*   <Text>Hola mundo react native!</Text>
       <Image source={require('./assets/wave.png')}  />
 
       <Text>------------------------------------</Text>
@@ -21,8 +22,16 @@ export default function App() {
     
       <Saludo2/>
 
+      
       <text>------------------------------------</text>
-      <Perfil/>
+       */}
+      <Perfil Nombre= "Lulu" Carrera= "TIID 221"  Materia= "Mvil" Cuatri= "4"/>
+
+      <Perfil Nombre= "Renata" Carrera= "TIID 221"  Materia= "Mvil" Cuatri= "4"/>
+
+      <Perfil Nombre= "Luisa" Carrera= "TIID 221"  Materia= "Mvil" Cuatri= "4"/>
+
+
 
       
 

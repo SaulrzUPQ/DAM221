@@ -1,10 +1,23 @@
-import {Text} from 'react-native';
+import {Text, View, Button} from 'react-native';
+import {useState} from 'react';
 
-export const Perfil=()=>{
+export const Perfil=({Nombre,Carrera,Materia,Cuatri})=>{
+
+    const [mostrar, setMostrar]= useState(false);
+       
+
     return(
-        <Text>Erick Saul Olvera Rodriguez
-            TIID 221 4to cuatri
-            Desarrollo de Aplicaciones Moviles
-        </Text>
+        <View>
+            <Text>{Nombre}</Text>
+             {/* renderizado condicional */}
+            {mostrar && 
+            <>  
+            <Text>{Carrera}</Text>
+            <Text>{Materia}</Text>
+            <Text>{Cuatri}</Text>
+            </>
+            }
+            <Button title="Ver perfil" onPress={() => setMostrar(!mostrar)} />
+        </View>
     );
 }
