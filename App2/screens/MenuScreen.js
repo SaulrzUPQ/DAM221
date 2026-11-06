@@ -1,4 +1,3 @@
-
 /*1.Zona de importaciones*/ 
 
 import { StyleSheet,View, Text , Button} from 'react-native';
@@ -43,11 +42,13 @@ export default function MenuScreen() {
                 <Button title = "Pract:Pressable"onPress={() => setScreen('pressable')} />
                 <Button title = "Pract:Text" onPress={() => setScreen('text')} />
                 <Button title = "Pract:FlatList" onPress={() => setScreen('flat')} />
+                <Button title = "Pract:Image" onPress={() => setScreen('image')} />
+                <Button title = "Pract:Modal" onPress={() => setScreen('modal')} />
+                <Button title = "Pract:Activity" onPress={() => setScreen('activity')} />
             </View>
         );
-} //switch
-} //funcion
-
+    }
+  }    
 
 /*3.Zona de estilos y posicionamiento*/ 
 const styles = StyleSheet.create({
