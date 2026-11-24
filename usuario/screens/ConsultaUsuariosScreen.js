@@ -1,6 +1,7 @@
 import React from 'react';
-import {SafeAreaView,View,Text,FlatList,StyleSheet,
+import {SafeAreaView,View,Text,FlatList,StyleSheet,Pressable,
 } from 'react-native';
+import {router} from 'expo-router'
 
 export default function ConsultaUsuariosScreen() {
 
@@ -13,6 +14,11 @@ export default function ConsultaUsuariosScreen() {
   ];
 
   const renderTarjeta = ({ item }) => (
+
+    <Pressable onPress={() => router.push ({pathname:'/detalle',
+     params:{id :item.id, nombre:item.nombre, edad:item.edad}})}>
+      
+
     <View style={styles.card}>
 
       <Text style={styles.nombre}>{item.nombre}</Text>
@@ -24,6 +30,7 @@ export default function ConsultaUsuariosScreen() {
       </Text>
 
     </View>
+    </Pressable>
   );
 
   return (
